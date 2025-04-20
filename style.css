@@ -1,0 +1,33 @@
+*, 
+html, 
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+nav {
+    background-color: #161F38;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 24px;
+}
+
+nav h3 {
+    font-size: 24px;
+}
+
+.input-search {
+    padding: 8px 16px;
+    outline: none;
+}
+
+#movies {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 16px;
+    background-color: #26355E;
+}
