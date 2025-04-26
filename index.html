@@ -1,19 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <title>The Movie</title>
-</head>
-<body>
+  </head>
+  <body>
     <nav>
-        <h3>The Movie</h3>
-        <form>
-            <input type="search" placeholder="Search" class="input-search" />
-        </form>
+      <h3 id="title">The Movie</h3>
+      <form id="searchForm">
+        <button class="search-toggle">
+          <i class="fa-solid fa-magnifying-glass" style="color: white;"></i>
+        </button>
+        <input
+          id="search"
+          type="search"
+          placeholder="Search"
+          class="input-search"
+        />
+      </form>
     </nav>
 
-    <div id="movies"></div>
-</body>
+    <div class="parallax"></div>
+
+    <div id="moviesEl"></div>
+
+    <div class="pagination">
+      <div id="prev">Prev</div>
+      <div id="currentPage"></div>
+      <div id="next">Next</div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
 </html>
